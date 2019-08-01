@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Employee Home Portal</title>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="myCoolStyles.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="employeehome.html">EXPENSE REIMBURSEMENT SYSTEM:<br>EMPLOYEE HOME PORTAL</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="employeesubmitrequest.html">Submit a Reimbursement Request</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="employeepersonalpendingrequests.html">View Your Personal Pending Requests</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="employeepersonalresolvedrequests.html">View Your Personal Resolved Requests</a>
+      </li>   
+      <li class="nav-item">
+        <a class="nav-link" href="employeeviewpersonalinfo.html">View Your Personal Information</a>
+      </li> 
+    </ul>
+  </div>  
+</nav>
+<br>
+</head>
+<body>
+	
+	
+	<div class="display">
+		<h2>Update Your Contact Information:</h2>
+		<br>
+    	<form action="employeeupdateinfo" method="POST" name="contactinfo">
+            <fieldset>
+                <legend>Address Line 1:</legend>
+                <input required autocomplete="off" name="addressline1"/>
+            </fieldset>
+            <fieldset>
+                <legend>Address Line 2:</legend>
+                <input required autocomplete="off" name="addressline2"/>
+            </fieldset>
+            <fieldset>
+                <legend>City:</legend>
+                <input required autocomplete="off" name="city"/>
+            </fieldset>
+            <fieldset>
+                <legend>State:</legend>
+                <input required autocomplete="off" name="state"/>
+            </fieldset>
+            <fieldset>
+                <legend>Zip Code:</legend>
+                <input required autocomplete="off" name="zipcode"/>
+            </fieldset>
+            <fieldset>
+                <legend>Email:</legend>
+                <input required autocomplete="off" name="email"/>
+            </fieldset>
+            <fieldset>
+                <legend>Phone Number:</legend>
+                <input required autocomplete="off" name="phone"/>
+            </fieldset>
+            <br>
+            <input type="submit" value="update"/>
+        </form>
+    </div>
+	
+	
+	<form action="logout" method="get">
+		<input type="submit" value="logout"/>
+	</form>
+</body>
+<script src="scripts/updatepersonalinfo.js"></script>
+</html>
